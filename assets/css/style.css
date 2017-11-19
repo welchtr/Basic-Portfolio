@@ -3,6 +3,15 @@ body{
   background-image: url(../images/pink_rice.png);
 }
 
+/*Text Properties*/
+
+p.bioText{
+padding: 0px  20px 0px 30px;
+font: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+color: #777777;
+line-height: 1.3em;
+}
+
 .tiaraName{
   text-align: center;
   vertical-align: middle;
@@ -10,27 +19,76 @@ body{
   font-weight: bold;
 }
 
+p.aboutText{
+  color: #4aaaa5;
+  font-weight: bold;
+  font-size: xx-large;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  margin-left: 27px;
+}
+
+p.connectText{
+  color: #4aaaa5;
+  font-weight: bold;
+  font-size: x-large;
+  text-align: center;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
 .footertxt{
+  margin-top: 30px;
   text-align: center;
   vertical-align: bottom;
-  margin:0;
+  color: lightgrey;
   }
+
+
+
+
+  /* End Text Properties */
+
+
+/* Navbar Properties */
+.navbar{
+  float: right;
+  position: relative;
+  padding-top: 30px;
+
+
+}
+
+.navbar li:last-child {
+  border: none;
+}
 
 .navbar li{
   padding:0px;
   list-style: none;
   display: inline;
-  float: left;
+  border-right: 1px solid #000;
+
 }
 
+
+
 .navbar a{
-  padding-right: 15px;
+  padding:15px 15px 13px 15px;
+  color: grey;
+  font font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
 }
 
 .navbar ul{
   margin: 0;
   float:right;
+
 }
+
+
+
+/* End Navbar Properties */
+
+/* Header Properties */
 
 .header-wrapper{
   background-color: #ffffff;
@@ -48,6 +106,9 @@ body{
   position: absolute;
 }
 
+/* End Header Properties */
+
+/* Content Area Property  */
 .content-wrapper{
   width: 960px;
   height: 442px;
@@ -57,14 +118,26 @@ body{
 
 }
 
+/* About Me Section Properties */
+
 .main-section{
   width: 587px;
   height:435px;
   background-color:#ffffff;
   position: absolute;
-
-
 }
+
+.headerLine{
+    border : 0;
+    margin-top: 10px;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+
+/* Sidebar Section Properties */
+
 
 .sidebar{
   width: 270px;
@@ -73,10 +146,25 @@ body{
   float: right;
 }
 
+  .connectBar li{
+    list-style: none;
+    display: inline;
+
+  }
+
+  .connectBar a{
+    text-decoration: none;
+  }
+
+
+/* Footer Property*/
+
 .footer{
-  width: 100%;
-  height:65px;
+  position: static;
+  margin-top: 333px;
+  width:100%;
+  height:80px;
   background-color: #666666;
-  position: fixed;
-  margin-top: 65px;
+  border-top: solid 8px #4aaaa5;
+
 }
